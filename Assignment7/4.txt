@@ -1,0 +1,18 @@
+1. pd.merge() joins DataFrames using common columns, while df.join() joins using indexes by default.
+2. pd.merge() is more flexible and supports:
+  ->inner join
+  ->left join
+  ->right join
+  ->outer join
+  ->multiple keys
+
+3.df.join() is mainly used for simple index-based joining.
+
+4.pd.merge() syntax:
+  ->pd.merge(df1, df2, on='ID')
+
+5.df.join() syntax:
+  ->df1.join(df2)
+
+6.pd.merge() works similar to SQL JOIN operations.
+7.Use pd.merge() when joining on columns and df.join() when indexes are already set properly.
